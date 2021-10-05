@@ -38,10 +38,12 @@ test:
     - pytest -vv --pyargs cerberus.tests
 
 about:
-  home: https://github.com/nicolaiarocci/cerberus
+  home: https://github.com/pyeve/cerberus
   license: ISC
   license_file: LICENSE
   summary: 'Lightweight, extensible schema and data validation tool for Python dictionaries.'
+  dev_url: https://github.com/pyeve/cerberus
+  doc_url: https://docs.python-cerberus.org/en/stable/
 
 extra:
     recipe-maintainers:
