@@ -33,8 +33,8 @@ test:
     - pip check
     - mkdir ${SP_DIR}/cerberus/tests  # [unix]
     - cp -r cerberus/tests ${SP_DIR}/cerberus/  # [unix]
-    - mkdir %SP_DIR%/cerberus/tests  # [win]
-    - cp -r cerberus/tests %SP_DIR%/cerberus/  # [win]
+    - md "%SP_DIR%\cerberus\tests"  # [win]
+    - xcopy /E /I /Y "cerberus\tests" "%SP_DIR%\cerberus\tests"  # [win]
     - pytest --pyargs cerberus.tests
   requires:
     - pip
